@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>滑屏</title>
-    <script src="../build.js"></script>
+    <script src="../build/wxmoment.js"></script>
     <style>
         *{
             margin: 0;
@@ -64,6 +64,9 @@
 
 <script>
     $(document).ready(function(){
+        var wa = new WxMoment.Analytics({
+            projectName: "20150504WXMOMENT"
+        });
 
         var pageSlider = new WxMoment.PageSlider({
             pages: $('.screen'),
