@@ -2,5 +2,8 @@
   "description": "WXMoment Page Slider",
   "scripts": [
     "index.js"
+  ],
+  "locals": [
+    "analytics"
   ]
 }
