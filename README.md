@@ -19,7 +19,7 @@ node server.js
 
 ```
 component build --name wxmoment
-gulp build
+gulp
 ```
 
 
