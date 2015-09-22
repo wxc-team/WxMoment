@@ -1,0 +1,10 @@
+{
+  "description": "WXMoment Form",
+  "scripts": [
+    "index.js"
+  ],
+  "locals": [
+    "analytics",
+    "zepto"
+  ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <script src="../build/wxmoment.js"></script>
+</head>
+<body>
+
+<form>
+    <input type="text" id="name"/>
+    <input type="text" id="sex"/>
+    <input type="text" id="tel"/>
+    <input type="text" id="prov"/>
+
+    <button type="submit">提交</button>
+</form>
+
+<script>
+    $(document).ready(function(){
+
+        //=========表单===========
+        $('form').submit(function () {
+
+            var form = new WxMoment.Form({
+                appid: 'wx69618ae091cf2c76',
+                qid: '323',
+                name: $('#name').val(),
+                sex: $('#sex').val(),
+                tel: $('#tel').val(),
+                prov: $('#prov').val()
+            })
+
+            form.submit(function () {
+                alert('seccess!')
+            }, function () {
+                alert('failed!')
+            })
+
+            return false;
+        })
+    })
+</script>
+
+</body>
+</html>
