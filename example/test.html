@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>tvp.player_v2.js</title>
+</head>
+<body>
+<link rel="stylesheet" href="http://wximg.qq.com/tmt/qy-showroom/dist/css/style-showroom.css"/>
+
+
+
+<script src="http://wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js" type="text/javascript" ></script>
+
+<div id="mod_player"></div>
+
+<div id="WxMomentVideo" style="width: 320px; height: 320px;"></div>
+
+<div class="btn-video" id="btn-video">播放视频</div>
+
+<script>
+
+    var video = new WxMoment.Video({
+        //请联系接口人确认视频清晰度已调至高清版本
+        //如果要定制“播放按钮”的样式，请使用 CSS 覆盖 .tvp_overlay_play 和 .tvp_button_play 即可
+
+        vid: "a0016gys8ct", //视频 vid 取自视频地址：http://v.qq.com/page/a/t/t/a0016gys8ct.html
+        pic: "http://wximg.gtimg.com/tmt/_demo/wxmoment/img/video-thumb.jpg", //设置视频默认缩略图
+        oninited: function () {
+            //播放器在视频载入完毕触发
+        },
+        onplaying: function () {
+            //播放器真正开始播放视频第一帧画面时
+        },
+        onpause: function () {
+            //播放器触发暂停时，目前只针对HTML5播放器有效
+        },
+        onresume: function () {
+            //暂停后继续播放时触发
+        },
+        onallended: function () {
+            //播放器播放完毕时
+        },
+        onfullscreen: function (isfull) {
+            //onfullscreen(isfull) 播放器触发全屏/非全屏时，参数isfull表示当前是否是全屏
+        }
+    });
+
+//var wWidth = window.screen.availWidth,
+//    wHeight = window.screen.availHeight;
+//var width = window.innerWidth || wWidth,
+//    height = parseInt(parseInt(width* (9/16) )),
+//    height = height > (window.innerHeight || wHeight) ? (window.innerHeight || wHeight) : height;
+//
+//var video = new tvp.VideoInfo();
+//video.setVid('l0171ne1fjx');
+//var player = new tvp.Player();
+//player.create({
+//    width  : width,
+//    height : height,
+//    video  : video,
+//    modId  : "mod_player"
+//});
+
+    $('#btn-video').click(function(){
+        video.getPlayer().enterFullScreen();
+    });
+</script>
+
+</body>
+</html>
