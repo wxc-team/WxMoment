@@ -1,6 +1,6 @@
 {
   "name": "WXMoment",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "dependencies": {
     "component-middleware": "^1.0.0",
     "express": "^4.12.3",

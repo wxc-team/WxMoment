@@ -1,4 +1,4 @@
-# WxMoment
+# WxMoment 0.0.4
 
 ### 开发指南
 
