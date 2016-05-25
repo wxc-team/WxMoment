@@ -5,57 +5,19 @@
     <title>横屏提示</title>
     <!--<script src="../build/wxmoment.js"></script>-->
     <!--<script src="../dist/wxmoment.min.js"></script>-->
-    <script src="//wximg.gtimg.com/wxp/libs/wxmoment/0.0.3/wxmoment.min.js"></script>
+    <script src="https://wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>
 </head>
 <body>
 
 <script>
-//    $(document).ready(function(){
+    $(document).ready(function(){
 
-        //=========旋屏提示=========
-//        var ot = new WxMoment.OrientationTip();
+//        =========旋屏提示=========
+        var ot = new WxMoment.OrientationTip();
 
-//    })
+    })
 
-//var wa = new WxMoment.Analytics({
-//    //projectName 请与微信商务团队确认
-//    projectName: "20150908irobot"
-//});
-//var share = new WxMoment.Share();
 
-//var video = new WxMoment.Video({
-//    //请联系接口人确认视频清晰度已调至高清版本
-//    //如果要定制“播放按钮”的样式，请使用 CSS 覆盖 .tvp_overlay_play 和 .tvp_button_play 即可
-//
-//    vid: "h0164d7fx9n", //视频 vid 取自视频地址：http://v.qq.com/page/a/t/t/a0016gys8ct.html
-//    pic: "../img/p1_pImg.jpg", //设置视频默认缩略图
-//    oninited: function () {
-//        //播放器在视频载入完毕触发
-//    },
-//    onplaying: function () {
-//        //播放器真正开始播放视频第一帧画面时
-//        wa.sendEvent('click', 'playVideo');
-//    },
-//    onpause: function () {
-//        //播放器触发暂停时，目前只针对HTML5播放器有效
-//    },
-//    onresume: function () {
-//        //暂停后继续播放时触发
-//    },
-//    onallended: function () {
-//        //播放器播放完毕时
-//    },
-//    onfullscreen: function (isfull) {
-//        //onfullscreen(isfull) 播放器触发全屏/非全屏时，参数isfull表示当前是否是全屏
-//    }
-//});
-
-//可以通过以下方式控制播放/暂停
-//video.getPlayer().play();
-//video.getPlayer().pause();
-
-//以下可以拉起iOS全屏播放
-//video.getPlayer().enterFullScreen();
 
 new WxMoment.OrientationTip();
 </script>
