@@ -1,0 +1,10 @@
+{
+  "description": "WxMoment WxVideo",
+  "scripts": [
+    "index.js"
+  ],
+  "locals": [
+    "underscore",
+    "analytics"
+  ]
+}

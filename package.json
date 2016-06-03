@@ -2,12 +2,12 @@
   "name": "WXMoment",
   "version": "0.0.1",
   "dependencies": {
-    "component-middleware": "^1.0.0",
-    "express": "^4.12.3",
-    "gulp": "^3.8.11",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0",
-    "serve-static": "^1.9.2"
+    "component-middleware": "*",
+    "express": "*",
+    "gulp": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "serve-static": "*"
   },
   "scripts": {
     "start": "node server.js"
