@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>腾讯视频</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <script src="../build/wxmoment.js"></script>
+    <!--<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>-->
+</head>
+<body>
+<div id="WxMomentVideo" style="width: 200px; height: 150px;"></div>
+<script>
+    var video = new WxMoment.WxVideo({
+        vid: "i00184ka7lw", //视频 vid 取自视频地址：http://v.qq.com/page/a/t/t/a0016gys8ct.html        
+    });
+    video.resize(150);
+</script>
+</body>
+</html>

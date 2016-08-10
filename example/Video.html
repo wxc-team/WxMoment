@@ -6,8 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="format-detection" content="telephone=no">
-    <script src="../build.js"></script>
-    <script src="http://cdnjs.gtimg.com/cdnjs/libs/wxmoment/0.0.2-beta2/wxmoment.min.js"></script>
+    <script src="../build/wxmoment.js"></script>
+    <!--<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>-->
 </head>
 <body>
 <div id="WxMomentVideo" style="width: 320px; height: 320px;"></div>
@@ -16,13 +16,16 @@
     var video = new WxMoment.Video({
         //请联系接口人确认视频清晰度已调至高清版本
         //如果要定制“播放按钮”的样式，请使用 CSS 覆盖 .tvp_overlay_play 和 .tvp_button_play 即可
+        //默认.tvp_fileszie 显示视频兆数，可以使用样式覆盖隐藏
 
-        vid: "a0016gys8ct", //视频 vid 取自视频地址：http://v.qq.com/page/a/t/t/a0016gys8ct.html
+        vid: "i00184ka7lw", //视频 vid 取自视频地址：http://v.qq.com/page/a/t/t/a0016gys8ct.html
         pic: "http://wximg.gtimg.com/tmt/_demo/wxmoment/img/video-thumb.jpg", //设置视频默认缩略图
         oninited: function () {
+            console.log(0)
             //播放器在视频载入完毕触发
         },
         onplaying: function () {
+            console.log(1)
             //播放器真正开始播放视频第一帧画面时
         },
         onpause: function () {
@@ -44,7 +47,7 @@
     //video.getPlayer().pause();
 
     //以下可以拉起iOS全屏播放
-    //video.getPlayer().enterFullScreen();
+    video.getPlayer().enterFullScreen();
 
 </script>
 </body>

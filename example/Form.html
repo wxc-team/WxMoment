@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <script src="../build/wxmoment.js"></script>
+    <!--<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>-->
+</head>
+<body>
+
+<form>
+    <input type="text" id="name"/>
+    <input type="radio" name="sex" value="male" checked/>
+    <input type="radio" name="sex" value="female"/>
+    <input type="text" id="tel"/>
+
+    <button type="submit">提交</button>
+</form>
+
+<script>
+    $(document).ready(function(){
+
+        //=========表单===========
+        $('form').submit(function () {
+
+            //获取字段数据
+            var name = $('#name').val(),
+                    sex = $('input[name="sex"]:checked').val(),
+                    tel = $('#tel').val()
+
+            //检验字段内容
+            if(!name || !tel){
+                alert('内容填写不完整！');
+                return false;
+            }
+            var telPattern =  /(^[0-9]{3,4}\-[0-9]{7,8}$)|(^[0-9]{7,8}$)|(^\([0-9]{3,4}\)[0-9]{3,8}$)|(^1[3|5|8][0-9]\d{4,8}$)/;
+            if(!telPattern.test(tel)){
+                alert('电话填写不正确！');
+                return false;
+            }
+
+            //填写表单内容
+            var form = new WxMoment.Form({
+                appid: 'wx0000000000000000',    //客户公众号appid，可在[微信公众平台](https://mp.weixin.qq.com)->开发者中心 查看
+                qid: 'xxx',                    //表单id，请与运营经理联系获取
+                name: name,        //表单内容，需先与运营经理沟通后配置所需提交的内容
+                sex: sex,
+                tel: tel
+            })
+
+            //提交表单
+            form.submit(function () {
+                //成功的回调
+                alert('seccess!')
+            }, function () {
+                //失败的回调
+                alert('failed!')
+            })
+
+            return false;
+        })
+    })
+</script>
+
+</body>
+</html>

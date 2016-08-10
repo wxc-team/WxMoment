@@ -19,5 +19,11 @@ node server.js
 
 ```
 component build --name wxmoment
-gulp build
+gulp
 ```
+
+
+##Wiki
+
+进入[wiki](https://github.com/wxc-team/WxMoment/wiki)查看版本详情
+

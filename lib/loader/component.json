@@ -3,5 +3,8 @@
   "scripts": [
     "PxLoader.js",
     "PxLoaderImage.js"
+  ],
+  "locals": [
+    "analytics"
   ]
 }

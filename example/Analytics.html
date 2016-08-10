@@ -3,10 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>统计</title>
-    <script src="../build.js"></script>
+    <script src="../build/wxmoment.js"></script>
+    <!--<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>-->
 </head>
 <body>
+<button id="button01">test me!</button>
 <script>
+    console.log(1)
     $(document).ready(function(){
 
         //=========统计===========
@@ -14,12 +17,21 @@
             projectName: "20150504WXMOMENT"
         });
 
+        var event;
         //绑定自定义按钮事件
         //也可以在JS特定逻辑中添加
         $('#button01').click(function(){
             //必须传两个参数,分别为: 事件分类,事件名称
             wa.sendEvent('click', 'button01');
+
+            event = ['jump', 'next']
+//            location.href = 'Analytics.html'
+
+
         });
+        $(window).on('pagehide', function () {
+            event && wa.sendEvent(event[0], event[1]);
+        })
 
     })
 </script>

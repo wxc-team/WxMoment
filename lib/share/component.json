@@ -4,6 +4,7 @@
     "index.js"
   ],
   "locals": [
-    "underscore"
+    "underscore",
+    "analytics"
   ]
 }

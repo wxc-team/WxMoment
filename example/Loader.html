@@ -3,26 +3,38 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>资源加载</title>
-    <script src="../build.js"></script>
+    <script src="../build/wxmoment.js"></script>
+    <!--<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.js"></script>-->
 </head>
 <body>
 
 <script>
+    var wa = new WxMoment.Analytics({
+        //projectName 请与微信商务团队确认
+        projectName: "20150504WXMOMENT"
+    });
+
     $(document).ready(function(){
 
         //=========资源加载=========
         var loader = new WxMoment.Loader();
         //添加一个资源
-        loader.addImage('https://res.wx.qq.com/mpres/htmledition/images/bg/bg_logo2491a6.png');
+        loader.addImage('http://nissan.qq.com/wap/images/df-bg01.jpg');
+        loader.addImage('http://nissan.qq.com/wap/images/df-bg02.jpg');
+        loader.addImage('http://nissan.qq.com/wap/images/df-bg03.jpg');
 
         //监听资源加载完成事件
         loader.addCompletionListener(function () {
-            console.log('加载完成');
+            console.log('done');
         });
 
         //启动资源加载管理器
         loader.start();
 
+
+//        setTimeout(function(){
+//            loader.start();
+//        }, 1000);
     })
 </script>
 
