@@ -1,10 +1,10 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry : './public/js/src/module/index.es6',
+    entry : __dirname + '/lib/wxmoment/index.js',
     output: {
-        path: __dirname + '/public/js/bin',
-        filename: 'index.js'
+        path: __dirname + '/build',
+        filename: 'wxmoment.js'
     },
     module : {
         loaders: [
