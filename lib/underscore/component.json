@@ -1,9 +1,0 @@
-{
-  "description": "JavaScript's functional programming helper library.",
-  "author": "Jeremy Ashkenas <jeremy@documentcloud.org>",
-  "version": "1.7.0",
-  "main": "underscore.js",
-  "scripts": [
-    "underscore.js"
-  ]
-}

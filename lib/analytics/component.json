@@ -1,7 +1,0 @@
-{
-  "description": "WXMoment Analytics",
-  "scripts": [
-    "index.js",
-    "analyticsCommon.js"
-  ]
-}
