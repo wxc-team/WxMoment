@@ -1,4 +1,4 @@
-# WxMoment
+# QQMailH5
 
 ### 开发指南
 
@@ -18,12 +18,6 @@ node server.js
 编译JS
 
 ```
-component build --name wxmoment
+component build --name qqmailh5
 gulp
 ```
-
-
-##Wiki
-
-进入[wiki](https://github.com/wxc-team/WxMoment/wiki)查看版本详情
-
