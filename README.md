@@ -18,6 +18,7 @@ node server.js
 编译JS
 
 ```
-component build --name qqmailh5
+webpack
 gulp
+
 ```
