@@ -4,7 +4,7 @@ module.exports = {
     entry : __dirname + '/lib/wxmoment/index.js',
     output: {
         path: __dirname + '/build',
-        filename: 'qmui.js'
+        filename: 'qmui_h5.js'
     },
     module : {
         loaders: [
