@@ -18,7 +18,7 @@ node server.js
 编译JS
 
 ```
-webpack
-gulp
+webpack (打包)
+gulp (压缩)
 
 ```

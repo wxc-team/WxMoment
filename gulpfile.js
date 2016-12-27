@@ -4,9 +4,9 @@ var rename = require('gulp-rename');
 
 gulp.task('build', function () {
 
-    return gulp.src('./build/wxmoment.js')
+    return gulp.src('./build/qmui_h5.js')
         .pipe(uglify())
-        .pipe(rename('wxmoment.min.js'))
+        .pipe(rename('qmui_h5.min.js'))
         .pipe(gulp.dest('./dist'));
 });
 
