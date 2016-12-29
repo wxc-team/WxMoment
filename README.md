@@ -1,4 +1,4 @@
-# WxMoment
+# QMUI H5
 
 ### 开发指南
 
@@ -18,12 +18,7 @@ node server.js
 编译JS
 
 ```
-component build --name wxmoment
-gulp
+webpack (打包)
+gulp (压缩)
+
 ```
-
-
-##Wiki
-
-进入[wiki](https://github.com/wxc-team/WxMoment/wiki)查看版本详情
-

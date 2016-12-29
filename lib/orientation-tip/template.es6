@@ -1,3 +1,6 @@
+'use strict';
+
+module.exports = `
 <style type="text/css">
 @-webkit-keyframes rotation {
     10% {
@@ -173,3 +176,4 @@
     <div id="qr-box__thumb" class="qr-box__thumb"></div>
     <div class="qr-box__text">微信扫一扫<br>手机浏览效果更佳</div>
 </div>
+`;
